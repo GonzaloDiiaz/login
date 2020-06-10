@@ -11,10 +11,8 @@ public class Login {
         Scanner sc = new Scanner(System.in);
         contra = sc.nextInt();
         if (contra == 1234) {
-            //CODIGO
             System.out.println("Contraseña correcta");
         } else {
-            //CODIGO
             System.out.println("Contraseña incorrecta");            
         }
     }
