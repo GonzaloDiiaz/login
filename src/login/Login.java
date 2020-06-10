@@ -5,15 +5,30 @@ import java.util.Scanner;
 public class Login {
 
     public static void main(String[] args) {
-        int contra;
-        contra = 1234;
-        
+        String contra;
+        String register;
+        String nombre;
+        String nombreInic;
+
         Scanner sc = new Scanner(System.in);
-        contra = sc.nextInt();
-        if (contra == 1234) {
-            System.out.println("Contraseña correcta");
+        System.out.println("Ingrese el nombre de usuario: ");
+        nombre = sc.next();
+        System.out.println("Ingrese una contraseña: ");
+        register = sc.next();
+        System.out.println("Ingrese Nombre de usuario: ");
+        nombreInic = sc.next();
+
+        if (nombre.equals(nombreInic)) {
+            System.out.println("Nombre correcta");
+            System.out.println("Ahora ingrese la contraseña: ");
+            contra = sc.next();
+            if (register.equals(contra)) {
+                System.out.println("Contraseña correcta");
+            } else {
+                System.out.println("Contraseña incorrecta");
+            }
         } else {
-            System.out.println("Contraseña incorrecta");            
+            System.out.println("Nombre incorrecto");
         }
     }
 
